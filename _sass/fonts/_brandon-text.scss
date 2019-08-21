@@ -1,0 +1,30 @@
+@mixin font-face($face, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: 'Brandon Text';
+		src:
+			url('/assets/fonts/brandon-text/brandontext-' + $face + '.woff2') format('woff2'),
+			url('/assets/fonts/brandon-text/brandontext-' + $face + '.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+/*
+
+Numeric weights are based on common weight mappings:
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
+
+*/
+
+@include font-face(black, 900, normal);
+@include font-face(blackitalic, 900, italic);
+@include font-face(bold, 700, normal);
+@include font-face(bolditalic, 700, italic);
+@include font-face(medium, 500, normal);
+@include font-face(mediumitalic, 500, italic);
+@include font-face(regular, 400, normal);
+@include font-face(regularitalic, 400, italic);
+@include font-face(light, 300, normal);
+@include font-face(lightitalic, 300, italic);
+@include font-face(thin, 100, normal);
+@include font-face(thinitalic, 100, italic);
