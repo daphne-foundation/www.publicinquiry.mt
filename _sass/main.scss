@@ -54,6 +54,11 @@ body > header > p {
 	margin: 1em 0 0 0;
 }
 
+body > footer a {
+	color: indigo;
+	text-decoration: none;
+}
+
 body > footer {
 	background-color: floralwhite;
 	font-size: 0.8em;
@@ -70,7 +75,7 @@ article > header {
 	text-align: center;
 }
 
-.article-body > h1 {
+.article-body > h1, .article-body > a > h1 {
 	background-color: indigo;
 	color: white;
 	padding: 0.5em;
