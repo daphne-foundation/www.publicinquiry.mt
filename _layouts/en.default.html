@@ -31,19 +31,15 @@
 				var deadline = new Date(2019, 8, 26);
 				var one_day;
 
-				if (today.getFullYear() > 2019 || (today.getMonth() == 8 && today.getDate() >= 26)) {
-					return 0;
-				}
-
 				one_day = 1000 * 60 * 60 * 24;
-				return Math.ceil((deadline.getTime() - today.getTime()) / one_day);
+				return Math.ceil((today.getTime() - deadline.getTime()) / one_day);
 			})();
 		</script>
 	</head>
 	<body>
 		<header>
 			<h1><a href="/en/">Public inquiry for Daphne Caruana Galizia</a></h1>
-			<p>On 26 June 2019 the Council of Europe gave Malta three months to start a public inquiry that will uncover the whole truth behind Daphne's assassination. There are now: <span id="daysleft"><span id="days">84</span> days left.</span></p>
+			<p>On 26 June 2019 the Council of Europe gave Malta three months to start a public inquiry that will uncover the whole truth behind Daphne's assassination. We are now: <span id="daysleft"><span id="days">0</span> days past deadline.</span></p>
 			<script type="text/javascript">
 				(function() {
 					var days_elem = document.getElementById('days');
