@@ -1,9 +1,10 @@
 @import 'fonts/_brandon-text';
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=latin-ext');
 
 body {
 	margin: 0;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 mark {
@@ -12,12 +13,9 @@ mark {
 	background-color: papayawhip;
 }
 
-strong, b {
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-}
-
 h1, h2 {
 	font-family: 'Brandon Text', sans-serif;
+	font-weight: 900;
 }
 
 h1 > a {
@@ -62,7 +60,6 @@ body > footer a {
 body > footer {
 	background-color: floralwhite;
 	font-size: 0.8em;
-	font-family: 'PT Sans Caption', sans-serif;
 	padding: 1em;
 	text-align: justify;
 }
@@ -133,9 +130,14 @@ figcaption {
 	background-position: top left;
 }
 
+.language-switcher > a {
+	text-decoration: underline;
+}
+
 @media screen {
 	.expandable > a > h2::before {
 		content: '+';
+		font-family: 'Arial', sans-serif;
 		border: 1px solid indigo;
 		display: inline-block;
 		line-height: 1em;
@@ -148,7 +150,7 @@ figcaption {
 
 	.expandable:target > a > h2::before {
 		content: '•';
-		line-height: 0.9em;
+		line-height: 1em;
 	}
 
 	.expandable-body {

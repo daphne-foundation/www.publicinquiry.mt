@@ -1,3 +1,4 @@
+url: https://www.publicinquiry.mt
 plugins:
   - jekyll-redirect-from
 exclude:
